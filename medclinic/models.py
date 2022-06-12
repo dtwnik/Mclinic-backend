@@ -23,3 +23,12 @@ class Appointment(models.Model):
 
     class Meta:
         verbose_name_plural = "Записи"
+
+
+class Call(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField(max_length=255)
+    tel = models.CharField(max_length=11)
+
+    class Meta:
+        verbose_name_plural = "Звонки"

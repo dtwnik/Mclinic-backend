@@ -16,6 +16,12 @@ class AppointmentSerializer(serializers.HyperlinkedModelSerializer):
         fields = '__all__'
 
 
+class CallSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Call
+        fields = '__all__'
+
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User

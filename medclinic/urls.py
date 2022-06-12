@@ -7,6 +7,7 @@ router = routers.DefaultRouter()
 router.register(r'Doctor', DoctorViewSet)
 router.register(r'Appointment', AppointmentViewSet)
 router.register(r'User', UserViewSet)
+router.register(r'CallBack', CallViewSet)
 
 
 urlpatterns = [

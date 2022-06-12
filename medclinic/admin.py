@@ -3,3 +3,4 @@ from medclinic.models import *
 
 admin.site.register(Doctor)
 admin.site.register(Appointment)
+admin.site.register(Call)

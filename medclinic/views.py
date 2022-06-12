@@ -25,6 +25,11 @@ class AppointmentViewSet(viewsets.ModelViewSet):
         return Appointment.objects.filter(client=user)
 
 
+class CallViewSet(viewsets.ModelViewSet):
+    queryset = Call.objects.all()
+    serializer_class = CallSerializer
+
+
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
